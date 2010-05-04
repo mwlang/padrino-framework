@@ -9,7 +9,7 @@ end
 SEQUEL
 
 def setup_orm
-  require_dependencies 'sequel', 'sqlite3-ruby'
+  require_dependencies 'sequel', 'sequel_plus', 'sqlite3-ruby'
   create_file("config/database.rb", SEQUEL)
   empty_directory('app/models')
   empty_directory('db/migrate')
